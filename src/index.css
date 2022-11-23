@@ -11,3 +11,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar{
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  /* text-align: center; */
+  /* font-size: x-large; */
+  justify-content: space-between;
+}
+
+.App{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.contact-item{
+
+  font-family: sans-serif;
+  border: 1px solid gray;
+  width: 25vw;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.delete-btn {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/3096/3096687.png');
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-color: white;
+  border: none;
+}
+
+.edit-btn {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/1827/1827933.png');
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-color: white;
+  border: none;
+}
+
+.create-contact{
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  height: 50vh;
+  width: 400px;
+  background-color: white;
+  border: 3px solid rgb(143, 143, 157);
+  padding: 10px;
+  line-height: 2rem;
+  font-size: large;
+  font-family: sans-serif;
+  color: black;
+  text-align: right;
+  
+}
+
+.create-contact h1{
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  height: 20px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+
+.add-btn {
+  padding: 10px;
+  font-size: large;
+  font-weight: bolder;
+  /* letter-spacing: 0.2rem; */
+  width: 200px;
+  margin: 40px;
+  background-color: black;
+  color: white;
+
+}
+
+.close-btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  /* background-color: red; */
+  background-image: url('https://cdn-icons-png.flaticon.com/128/753/753345.png');
+  background-size: contain;
+  border: none;
+  color: red;
+}
+
+.add-contact-btn{
+  background-color: #555555;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 2px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+form{
+  margin-top: 50px;
+}
