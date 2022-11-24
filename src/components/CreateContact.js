@@ -2,14 +2,20 @@ import React, {useState} from "react";
 
 function CreateContact(props){
 
+    //Using useState hook to store input values
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+
+    //On Submit ==>
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         alert("Changes Submitted Successfully");
+        alert("It was a DUMMY call");
+        props.setIsClicked(false);
         
         fetch('https://jsonplaceholder.typicode.com/posts', {
           method: 'POST',
@@ -29,10 +35,14 @@ function CreateContact(props){
         
     };
 
+    // When we click on close button in form, this function will be called
+
     const handleClose = () => {
         props.setIsClicked(false);
     }
 
+
+    // If props.isClicked is true return this
 
     return props.isClicked ? (
 
@@ -65,6 +75,8 @@ function CreateContact(props){
                             <button className="close-btn" onClick={handleClose}></button>
                         </form>
         </div>
+        
+        //else return nothing
     ) : "";
 }
 

@@ -5,6 +5,7 @@ function Navbar(){
 
     const [isClicked, setIsClicked] = useState(false);
 
+    // Function to handle add contact functionality
     const handleAddContact = () => {
         
         setIsClicked(true); 
@@ -16,6 +17,8 @@ function Navbar(){
 
             <button className="add-contact-btn" onClick={handleAddContact}>Add Contact</button>
             {/* {isClicked && <CreateContact />} */}
+
+            {/* Passing isClicked variable and setIsClicked function as props  */}
             <CreateContact heading= 'Add Contact' isClicked= {isClicked} setIsClicked= {setIsClicked} />
         </div>
     );

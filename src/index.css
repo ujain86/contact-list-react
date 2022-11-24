@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/* Navbar */
+
 .navbar{
   display: flex;
   padding: 20px;
@@ -23,6 +25,8 @@ code {
   justify-content: space-between;
 }
 
+/* App */
+
 .App{
   display: flex;
   /* flex-direction: column; */
@@ -31,6 +35,9 @@ code {
   flex-wrap: wrap;
   margin-top: 10px;
 }
+
+/* Contact Item */
+
 .contact-item{
 
   font-family: sans-serif;
@@ -38,6 +45,7 @@ code {
   width: 25vw;
   padding: 10px;
   margin: 10px;
+  line-height: 2rem;
 
 }
 
@@ -58,6 +66,8 @@ code {
   background-color: white;
   border: none;
 }
+
+/* Create Contact */
 
 .create-contact{
   position: absolute;

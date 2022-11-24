@@ -15,6 +15,7 @@ class App extends React.Component {
   };
 
 
+  // Fetching data from API after first render
 
   async componentDidMount(){
 
@@ -39,6 +40,8 @@ class App extends React.Component {
       <Navbar />
 
       <div className="App">
+      
+      {/* For every single object in array, rendering a component using map function */}
       {data.map((contact) => {
         return <ContactItem contact= {contact} key={contact.id} />
       })}
